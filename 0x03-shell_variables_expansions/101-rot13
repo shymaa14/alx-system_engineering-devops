@@ -1,2 +1,2 @@
-#!/ova/onfu
-tr 'A-ZA' 'N-ZA-MN-ZA-M'
+#!/bin/bash
+tr 'A-Za' 'N-ZA-Mn-Za-m'
