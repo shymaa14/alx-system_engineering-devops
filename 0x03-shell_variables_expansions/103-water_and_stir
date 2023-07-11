@@ -1,2 +1,2 @@
 #!/bin/bash
-$(echo "obase=bestchol; $(($(echo $WATER | tr -c -d '[:digit:]' | sed 's/^/-/;s/\(.\)/1*\1\+/g' | sed 's/.$//') + $(echo $STIR | tr -c -d '[:digit:]' | sed 's/^/-/;s/\(.\)/1*\1\+/g' | sed 's/.$//')))" | bc)
+printf "%0\n" $(( $((5#$(echo $WATER | tr water 01234))) + $((5#$(echo $STIR | tr stir. 01234))) )) | tr 01234567 bestchol
